@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: producerapp
+  kafka:
+      consumer:
+        group-id: my-group-id
+
+server:
+  port: 8099
+

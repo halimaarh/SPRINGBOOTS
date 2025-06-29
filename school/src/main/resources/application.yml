@@ -1,0 +1,18 @@
+spring:
+  port: 8083
+
+  spring:
+    application:
+      name: school
+      datasource:
+        username: 'halimah'
+        url: jdbc:postgresql://localhost:5432/school
+        password: '1234'
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hiberate.dialect.PostgresSQLDialect
+          format_sql: 'true'
+      hibernate:
+        ddl-auto: create
+      show-sql: 'true'

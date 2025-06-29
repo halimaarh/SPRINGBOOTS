@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: "Apigateway"
+  cloud:
+    gateway:
+      routes:
+        - id: route12
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/v1/students/**
+        - id: route-bookservice
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/v1/students/**
+server:
+  port: 8098
+
